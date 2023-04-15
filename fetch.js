@@ -20,34 +20,32 @@ if (USE_GITHUB_DATA === "true") {
   if (GITHUB_USERNAME === undefined) {
     throw new Error(ERR.noUserName);
   }
-
+    // pinnedItems(first: 6, types: [REPOSITORY]) {
   console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
   var data = JSON.stringify({
     query: `
 {
   user(login:"${GITHUB_USERNAME}") { 
     name
-    bio
-    avatarUrl
-    location
-    pinnedItems(first: 6, types: [REPOSITORY]) {
-      totalCount
-      edges {
+      bio
+      avatarUrl
+      location
+      repositories(first: 6, orderBy: {field: CREATED_AT, direction: DESC}) {
+        totalCount
+        edges {
           node {
-            ... on Repository {
+            name
+            description
+            forkCount
+            stargazers {
+              totalCount
+            }
+            url
+            id
+            diskUsage
+            primaryLanguage {
               name
-              description
-              forkCount
-              stargazers {
-                totalCount
-              }
-              url
-              id
-              diskUsage
-              primaryLanguage {
-                name
-                color
-              }
+              color
             }
           }
         }

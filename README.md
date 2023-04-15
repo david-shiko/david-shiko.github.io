@@ -102,7 +102,7 @@ Note: Configuring environment variables before deploying your portfolio is highl
 ```bash
 - DeveloperFolio
   - node_modules
-  - public
+  - publicpublic
   - src
   - .env         <-- create it here
   - env.example  <-- this is the base file
