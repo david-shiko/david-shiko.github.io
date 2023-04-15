@@ -279,10 +279,10 @@ const achievementSection = {
       image: require("./assets/images/Business_Icons-51-1024.webp"),
       imageAlt: "Team Leadership Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
       ]
     },
   ],
