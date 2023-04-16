@@ -194,7 +194,7 @@ const workExperiences = {
       role: "Back End Developer",
       company: "Complete",
       companylogo: require("./assets/images/completeLogo.jpg"),
-      date: "Jan 2015 – Sep 2015",
+      date: "Oct 2019 - Nov 2021",
       desc: "COMPLETE implements complex projects in corporate IT infrastructure design and development. We specialize in the creation and installation of engineering systems in buildings as well as data processing centers."
     }
   ]
