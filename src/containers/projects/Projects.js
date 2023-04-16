@@ -48,6 +48,7 @@ export default function Projects() {
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
           <h1 className="project-title">Open Source Projects</h1>
+          <h2 style={{fontWeight: 100}}>These are private projects, but they can be shown or reviewed during the meeting or interview</h2>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {
