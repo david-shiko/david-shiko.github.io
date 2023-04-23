@@ -254,13 +254,12 @@ const achievementSection = {
       title: "Certified ethical hacker",
       subtitle:
         "A Certified Ethical Hacker is a skilled professional who understands and knows how to look for weaknesses and vulnerabilities in target systems.",
-      // image: require("./assets/images/ECC-CEH-Certificate-Logo.png"),
-      image: require("./assets/images/ceh-lms0.jpg"),
+      image: require("./assets/images/cehLogo.png"),
       imageAlt: "ECC-CEH-Certificate-Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/1Oq2czA8FgBUlvSIYkghngEmNUJDTdgm_/view?usp=sharing"
+          url: "https://drive.google.com/file/d/100ADAAIbdy2qxF_8rixfmODlSPud_BvC/view?usp=share_link"
         },
         {
           name: "Verify",
