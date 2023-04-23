@@ -26,7 +26,8 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 with experience in full cycle development and building complex backend services for both mobile and web applications, utilizing cutting-edge libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1zSseFDFbZ_VOWoDrlpUjdO1YwInL-tu1/view?usp=sharing", // Set to empty to hide the button
+   // Set to empty to hide the button
+    "https://drive.google.com/file/d/100ADAAIbdy2qxF_8rixfmODlSPud_BvC/view?usp=share_link",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -259,7 +260,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/100ADAAIbdy2qxF_8rixfmODlSPud_BvC/view?usp=share_link"
+          url: "https://drive.google.com/file/d/1Oq2czA8FgBUlvSIYkghngEmNUJDTdgm_/view"
         },
         {
           name: "Verify",
