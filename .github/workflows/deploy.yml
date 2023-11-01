@@ -4,13 +4,11 @@ env:
   GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
   USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
+  MEDIUM_USERNAME: "david_shiko" # Change this to your medium username
 on:
   push:
     branches:
       - master
-  schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -30,3 +28,10 @@ jobs:
           GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
+
+      - name: Upload npm debug logs 📦
+        if: failure() # Only run this step if the build fails
+        uses: actions/upload-artifact@v2
+        with:
+          name: npm-debug-logs
+          path: /home/github_workflow/runner/.npm/_logs/
